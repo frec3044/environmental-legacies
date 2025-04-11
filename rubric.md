@@ -28,39 +28,43 @@ Question 3:
 
 Question 4:
 
--   Full Credit: Five cities are listed. An environmental or demographic variable is identified and a range is provided. The variable has variation in it.
+-   Full Credit: Three cities are listed. An environmental or demographic variable is identified and a range is provided. The variable has variation in it.
 
--   Partial Credit: Missing one or more of the following: five cities, variable, or range in variable. Or variable does not show variation
+-   Partial Credit: Missing one or more of the following: three cities, variable, or range in variable. Or variable does not show variation
 
 -   No Credit: No answer was provided
 
 Question 5:
 
--   Full Credit: Five maps are provided for each of the cities. Maps match the style of the plots in `env-justice-tutorial.qmd` with NDVI for the different polygon classes.
+-   Full Credit: Description of expectation provided
 
--   Partial Credit: Missing maps or maps deviate from the style in `env-justice-tutorial.qmd` (e.g. no polygons, NDVI, etc).
-
--   No Credit: No answer was provided
+-   No Credit: No description provide OR description not relevant to question
 
 Question 6:
 
--   Full Credit: An insightful description is provided that connects to the five figures in Question 5.
+-   Full Credit: Three maps and mean NDVI by grade tables are provided for each of the cities. Maps match the style of the plots in `env-justice-tutorial.qmd` with NDVI for the different polygon classes.
 
--   Partial Credit: Description provide but is cursory
+-   Partial Credit: Missing maps or maps deviate from the style in `env-justice-tutorial.qmd` (e.g. no polygons, NDVI, etc) OR missing tables.
 
--   No Credit: No description was provided.
+-   No Credit: No answer was provided
 
 Question 7:
 
--   Full Credit: Code is provided that correctly generates a column for city, grade, and NDVI value.
+-   Full Credit: An insightful description is provided that compares and contrasts the three figures
 
--   Partial Credit: Code does not correctly generate the three required columns
+-   Partial Credit: Description provided but is cursory
 
--   No Credit: No answer provided
+-   No Credit: No description was provided.
 
 Question 8:
 
--   Full Credit: Plot is provided with five lines (different colors for each line) for the cities, grade on x-axis, and mean NDVI on the y-axis. The axes have useful labels. Title and legend are present.
+-   Full Credit: Code binds and filters correctly to build data dataset using tidyverse functions
+
+-   No Credit: No or incorrect answer provided
+
+Question 9:
+
+-   Full Credit: Plot is provided with three lines (different colors for each line) for the cities, grade on x-axis, and mean NDVI on the y-axis. The axes have useful labels. Title and legend are present.
 
 -   Partial Credit: Minor errors in the plot Plot is provided but one of the required elements missing or incorrect (colors, axes, labels, title, labels)
 
@@ -68,15 +72,15 @@ Question 8:
 
 -   No Credit: No plot provided.
 
-Question 9:
+Question 10:
 
--   Full Credit: Correct calculation of relative difference using tidyverse code and table provided
+-   Full Credit: Correct calculation of relative difference using tidyverse code and table provided.  Answer uses a pivot_ function.
 
 -   Partial Credit: Error in calculation of relative difference, does not use tidyverse code, or table not provided
 
 -   No Credit: No calculations or a table provided
 
-Question 10:
+Question 11:
 
 -   Full Credit: Plot is provided with one line, environmental variable on x-axis, and relative difference in NDVI on y-axis. The axes have useful labels. Title and legend are present.
 
@@ -85,6 +89,12 @@ Question 10:
 -   Partial Credit: Major errors in the plot. Plot is provided but multiple of the required elements missing or incorrect (colors, axes, labels, title, labels).
 
 -   No Credit: No plot provided.
+
+Question 12:
+
+-   Full Credit: Description of relationship provided
+
+-   No Credit: No description provided OR description not relevant to question
 
 Quarto
 
@@ -100,4 +110,4 @@ GitHub
 
 -   Partial Credit: Assignment found on course GitHub, but only a single commit was provided (no evidence that the student saved and committed progress) or missing HTML on GitHub.
 
--   No Credit: Assignment not found on the course GitHub organization
+-   No Credit: Assignment not found on the course GitHub organization OR no commits on GitHub found.

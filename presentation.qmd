@@ -10,19 +10,11 @@ editor: visual
 
 \
 \
-  What is the present-day impact of historic "redlining" of US cities during the Great Depression on current day ecological processes?
+What is the present-day impact of historic "redlining" of US cities during the Great Depression on current day ecological processes?
 
 ## Environmental Justice and Ecology
 
-::::: columns
-::: {.column width="70%"}
-![](img/paper.png){fig-alt="screenshot of Schell et al paper"}
-:::
-
-::: {.column width="30%"}
-![](img/schell.png){fig-alt="picture of Dr. Christopher Schell"} Dr. Christopher Schell
-:::
-:::::
+![](img/paper.png){fig-alt="screenshot of Schell et al paper" fig-align="center"}
 
 ::: aside
 <https://doi.org/10.1126/science.aay4497> <https://ourenvironment.berkeley.edu/users/1757114>
@@ -41,7 +33,7 @@ editor: visual
 -   The Home Owners' Loan Corporation (HOLC) was a government-sponsored corporation created as part of the New Deal
 -   The HOLC created a housing appraisal system of color-coded maps that categorized the riskiness of lending to households in different neighborhoods
 -   Lower grades = less opportunity for loans but lower grades also = minority communities
--   Red-lining: A discrimatory practice in which financial services were not provided to neighborhoods that had significant numbers of racial and ethnic minorities
+-   Red-lining: A discriminatory practice in which financial services were not provided to neighborhoods that had significant numbers of racial and ethnic minorities
 -   It was outlawed in 1968 following the passage of the civil rights bill.
 
 ## Data: Mapping Relining
