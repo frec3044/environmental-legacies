@@ -1,5 +1,5 @@
 ---
-title: "The ecological and evolutionary consequences of redlining"
+title: "The ecological consequences of redlining"
 author: "ADD YOUR NAME"
 format: 
   html:
@@ -48,7 +48,7 @@ Using the `tutorial/env-justice-tutorial.qmd` as the template, create a map that
 
 Tip: one challenge is getting the `xmin`, `ymin`, `xmax`, and `ymax` in the `box` correct.  It needs to be large enough to include the entire city.
 
-Tip: Use Google Maps to find longitude and latitude coordinates that mark the bounds of a box that surrounds the city.
+Tip: Use Google Maps (click on a location) to find longitude and latitude coordinates that mark the bounds of a box that surrounds the city.
 
 **Answer 1:**
 
@@ -64,7 +64,6 @@ Create a table that displays the mean NDVI for the different grade classificatio
 
 ```{r}
 
-
 ```
 
 ## Examining how the influence of redlining varies across city environmental or demographic characteristics
@@ -79,16 +78,36 @@ Read in the characteristics of the different cities in the dataset. The characte
 
 ```{r}
 
+```
 
+The data has the following columns
+
+```
+Rows: 198
+Columns: 14
+$ city       <chr> City name (note that city name is not unique because the same name can be in multiple states)
+$ state      <chr> State
+$ precip     <dbl> annual precipitation (mm / yr)
+$ range      <dbl> Range in annual temperature (°C)
+$ tavg       <dbl> mean annual temperature (°C)
+$ solar      <dbl> mean daily solar radiation (W/m2)
+$ tmax       <dbl> mean max temperature (°C)
+$ tmin       <dbl> mean min temperature (°C)
+$ vpd        <dbl> mean vapor pressure deficit (kPa)
+$ lat        <dbl> Latitude (degrees)
+$ lng        <dbl> Longitude (degree)
+$ population <dbl> Population
+$ density    <dbl> Population density (individual / km2)
+$ ranking    <dbl> An integer from 1-5 that captures the importance of a city (1 is most important, 5 least important).
 ```
 
 **Question 4:**
 
-Pick **five** cities that span a range of environmental or demographic characteristics. 
+Pick **three** cities that span a range of environmental or demographic characteristics. 
 
-Select one variable in the data set from Question 3 that 1) interests you and 2) has a large enough range where you see differences across your five selected cities. 
+Select one variable in the data set from Question 3 that 1) interests you and 2) has a large enough range where you see differences across your three selected cities. 
 
-List your five cities, the focal variable, and the range of your variable across your five cities.
+List your three cities, the focal variable, and the range of your variable across your three cities.
 
 **Answer 4:**
 
@@ -98,99 +117,114 @@ List your five cities, the focal variable, and the range of your variable across
 
 **Question 5:**
 
-Generate a map of NDVI within each class for each city (5 separate plots).
+How to you expect the relationship between grade and NDVI to change across your selected environment or demographic variable?
 
 **Answer 5:**
 
-City 1
-
-```{r}
-#| echo: false
-
-
-```
-
-City 2
-
-```{r}
-#| echo: false
-
-
-```
-
-City 3
-
-```{r}
-#| echo: false
-
-
-```
-
-City 4
-
-```{r}
-#| echo: false
-
-
-```
-
-City 5
-
-```{r}
-#| echo: false
-
-
-```
 
 **Question 6:**
 
-Describe any visual differences among the cities in the patterns of NDVI across the classes.
+Generate a map of NDVI within each class for each city (three separate plots) and a table with mean ndvi by grade for the city
+
+Notes: 
+
+- Larger cities take longer to download the data (many minutes).
+- Consider your internet connection strength when working on this part of the assignment.  
+- Start early so you have enough time to process the data before turning in your assignment.
+- Once you download the load and make a map, you may find that you downloaded more data that needed (there is a lot of satellite data beyond the city boundaries) because cities have grown since the 1930s. Be sure to reduce your box size to match the smaller city boundaries so the less data is downloaded when you do your final render.
+- Error like `replacement has 26 rows, data has 29` mean that your box is smaller than the polygon of grades.  Therefore you need to increase the size of your box.
+- It took ~20 minutes to render for my completed assignment.
 
 **Answer 6:**
 
-
-**Question 7:**
-
-Extract the mean NDVI for the different grade classes for each of your five selected cities.
-
-**Answer 7:**
+City 1 Map
 
 ```{r}
 
 ```
 
+City 1 Table: Mean NDVI by grade (save it as a unique data frame name)
+
+```{r}
+
+```
+
+City 2 Map
+
+```{r}
+
+```
+
+City 2 Table: Mean NDVI by grade (save it as a unique data frame name)
+
+```{r}
+
+```
+
+City 3 Map
+
+```{r}
+
+```
+
+City 3 Table: Mean NDVI by grade (save it as a unique data frame name)
+
+```{r}
+
+```
+
+**Question 7:**
+
+Describe any visual differences among the cities in the patterns of NDVI across the classes.
+
+**Answer 7:**
+
+
 **Question 8:**
 
-Plot the values for the different classes for the five cities on the same graph (x-axis is class, y-axis is mean NDVI, color is city).
+Combine (bind) the data frames for the three cities into a single data frame. Filter out the NA grade.
 
 **Answer 8:**
 
 ```{r}
 
-
 ```
 
 **Question 9:**
 
-Calculate the relative difference between the lowest and highest class for each city.  Print your results as a table in HTML.
+Plot the values for the different classes for the three cities on the same graph (x-axis is grade, y-axis is mean NDVI, color is city).  Be sure to think about what goem is most appropriate?
 
 **Answer 9:**
 
 ```{r}
 
-
 ```
 
 **Question 10:**
 
-Use a plot to answer the question: Does the relative difference between the highest and lowest classes vary with the environmental or demographic characteristic you choose in Question 3?
+Calculate the relative difference between the lowest and highest class for each city (do not use the NA class).  Print your results as a table in tge HTML.  You will use a `pivot_` to answer this question.
 
 **Answer 10:**
 
 ```{r}
 
+```
+
+**Question 11:**
+
+Use a plot to answer the question: Does the relative difference between the highest and lowest classes vary with the environmental or demographic characteristic you choose in Question 3?  You will need to use joins to combine your NDVI difference table with the city environmental/demographic table.
+
+**Answer 11:**
+
+```{r}
 
 ```
+**Question 12:** 
+
+Describe the relationship between your environmental or demographic variable and the NDVI difference across grades
+
+**Answer 12:**
+
 
 ## Citation
 
