@@ -151,7 +151,7 @@ Full remote sensing data sets are huge! (many bands, locations, times)
 ## Assignment
 
 -   Calculate, map, and analyze NDVI for different redlining grades within Richmond, VA
--   Calculate and map NDVI for different redlining grades for five cities of your choice
+-   Calculate and map NDVI for different redlining grades for three cities of your choice
 -   Evaluate how the relative influence of redlining varies across environmental or demographic gradients
 
 ## Assignment
