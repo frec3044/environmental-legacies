@@ -115,11 +115,20 @@ The function `select_bands` selects the defined bands.  In our case, the band se
 
 The function `apply_pixel` applies the band-wise calculation to each pixel (e.g., calculates NDVI within each pixel in each image). The function `reduce_time` finds the time dimension and applies the expression to collapse it down to a single value per x-y location.
 
+We are going to pull the data from the cloud to your local computer by writing it to a netcdf file using `write_ncdf`. This step will take a while to run because it is the step where data is transferred from the remote server to your computer. The speed at which this step runs will depend on your Wi-Fi speed or the network connection for the computer you are running it on.  You will notice that the netcdf file is 1 - 100 MB which is way less the total size of data that would need to be downloaded if we didn't use the remote processing of the raster cube.
+
 ```{r}
-ndvi <- data |>
+data |>
   select_bands(bands = c("red", "nir08")) |>
   apply_pixel(expr = "(nir08-red)/(nir08+red)", names = "NDVI") |>
-  reduce_time(expr = c("mean(NDVI)"), names = "NDVI_mean")
+  reduce_time(expr = c("mean(NDVI)"), names = "NDVI_mean") |>
+  write_ncdf("ndvi.nc", overwrite = TRUE)
+```
+
+We will then read it back in so we can work with the data
+
+```{r}
+ndvi <- ncdf_cube("ndvi.nc")
 ```
 
 Now, convert the NDVI object to a "stars" object so that it can more easily be visualized on a map.  A `stars` object is also a data cube with a slightly different format that plays well with mapping functions.  This step will take a while to run because it is the step where data is transferred from the remote server to your computer. The speed at which this step runs will depend on your Wi-Fi speed or the network connection for the computer you are running it on.
@@ -270,10 +279,13 @@ mask <- image_mask("scl", values=c(3, 8, 9)) # mask clouds and cloud shadows
 
 data <-  raster_cube(image_collection = col, view = cube, mask = mask)
 
-ndvi <- data |>
+data |>
   select_bands(bands = c("red", "nir08")) |>
   apply_pixel(expr = "(nir08-red)/(nir08+red)", names = "NDVI") |>
-  reduce_time(expr = c("mean(NDVI)"), names = "NDVI_mean")
+  reduce_time(expr = c("mean(NDVI)"), names = "NDVI_mean") |> 
+  write_ncdf("ndvi.nc", overwrite = TRUE)
+
+ndvi <- ncdf_cube("ndvi.nc")
 
 ndvi_stars <- st_as_stars(ndvi)
 ```

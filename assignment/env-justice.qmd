@@ -107,7 +107,7 @@ Pick **three** cities that span a range of environmental or demographic characte
 
 Select one variable in the data set from Question 3 that 1) interests you and 2) has a large enough range where you see differences across your three selected cities. 
 
-List your three cities, the focal variable, and the range of your variable across your three cities.
+List your three cities, the focal variable, and the range of your variable across your three cities.  Be sure the range of your variables is shown in your rendered HTML.
 
 **Answer 4:**
 
@@ -117,7 +117,7 @@ List your three cities, the focal variable, and the range of your variable acros
 
 **Question 5:**
 
-How to you expect the relationship between grade and NDVI to change across your selected environment or demographic variable?
+How to you expect the relationship between grade and NDVI to change across your selected environment or demographic variable? Why do you expect this pattern?  Be sure your answer specifically address why you expect *the difference in NDVI between A and D grades* to be different across the selected environment or demographic variable.
 
 **Answer 5:**
 
@@ -133,8 +133,13 @@ Notes:
 - Start early so you have enough time to process the data before turning in your assignment.
 - Once you download the load and make a map, you may find that you downloaded more data that needed (there is a lot of satellite data beyond the city boundaries) because cities have grown since the 1930s. Be sure to reduce your box size to match the smaller city boundaries so the less data is downloaded when you do your final render.
 - Error like `replacement has 26 rows, data has 29` mean that your box is smaller than the polygon of grades.  Therefore you need to increase the size of your box.
-- It took ~20 minutes to render for my completed assignment.
+- Error like `Error in raster_cube(image_collection = col, view = cube, mask = mask) : chunking[1] > 0 && chunking[2] > 0 && chunking[3] > 0 is not TRUE` is an issue with the box around your city.
 
+Speed of running assignment 
+- It took ~20 minutes to render for my completed assignment.
+- Larger cities take longer to download the data (many minutes).
+- Once you download the load and make a map, you may find that you downloaded more data that needed (there is a lot of satellite data beyond the city boundaries) because cities have grown since the 1930s. Be sure to reduce your box size to match the smaller city boundaries so the less data is downloaded when you do your final render.
+- If your Rendering is slow, try increasing dy and dx in your cube_view call to pull less data.  The unit of dy and dx is degrees latitude and longitude. If you increase dy and dx too much you will have issues where multiple polygons are within a single NDVI gridcell.   
 **Answer 6:**
 
 City 1 Map
@@ -202,7 +207,7 @@ Plot the values for the different classes for the three cities on the same graph
 
 **Question 10:**
 
-Calculate the relative difference between the lowest and highest class for each city (do not use the NA class).  Print your results as a table in tge HTML.  You will use a `pivot_` to answer this question.
+Calculate the NDVI difference between the lowest (D) and highest class (A) for each city (do not use the NA class).  Print your results as a table in the HTML.  You will use a `pivot_` to answer this question.
 
 **Answer 10:**
 
@@ -212,7 +217,7 @@ Calculate the relative difference between the lowest and highest class for each 
 
 **Question 11:**
 
-Use a plot to answer the question: Does the relative difference between the highest and lowest classes vary with the environmental or demographic characteristic you choose in Question 3?  You will need to use joins to combine your NDVI difference table with the city environmental/demographic table.
+Use a plot to answer the question: Does the NDVI difference between the highest and lowest classes vary with the environmental or demographic characteristic you choose in Question 3?  You will need to use joins to combine your NDVI difference table with the city environmental/demographic table.
 
 **Answer 11:**
 

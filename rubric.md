@@ -36,7 +36,9 @@ Question 4:
 
 Question 5:
 
--   Full Credit: Description of expectation provided
+-   Full Credit: Description of expectation provided with plausible explanation
+
+-   Partial Credit: Description of expectation provided but no plausible explanation
 
 -   No Credit: No description provide OR description not relevant to question
 
