@@ -1,12 +1,12 @@
-# Environmental Justice Module: Detailed Rubric
+# Environmental Legacies Module: Detailed Rubric
 
 ### Module weight: X pts
 
 Question 1:
 
--   Full Credit: Map is for Richmond, VA and matches the style of the plots in `env-justice-tutorial.qmd` with NDVI for the different polygon classes
+-   Full Credit: Map is for Richmond, VA and matches the style of the plots in `env-legacies-tutorial.qmd` with NDVI for the different polygon classes
 
--   Partial Credit: Map is present but missing NDVI, polygons, or other element in `env-justice-tutorial.qmd` maps. Map is not for Richmond, VA.
+-   Partial Credit: Map is present but missing NDVI, polygons, or other element in `env-legacies-tutorial.qmd` maps. Map is not for Richmond, VA.
 
 -   No Credit: Not answered or no map shown
 
@@ -44,9 +44,9 @@ Question 5:
 
 Question 6:
 
--   Full Credit: Three maps and mean NDVI by grade tables are provided for each of the cities. Maps match the style of the plots in `env-justice-tutorial.qmd` with NDVI for the different polygon classes.
+-   Full Credit: Three maps and mean NDVI by grade tables are provided for each of the cities. Maps match the style of the plots in `env-legacies-tutorial.qmd` with NDVI for the different polygon classes.
 
--   Partial Credit: Missing maps or maps deviate from the style in `env-justice-tutorial.qmd` (e.g. no polygons, NDVI, etc) OR missing tables.
+-   Partial Credit: Missing maps or maps deviate from the style in `env-legacies-tutorial.qmd` (e.g. no polygons, NDVI, etc) OR missing tables.
 
 -   No Credit: No answer was provided
 
@@ -66,7 +66,7 @@ Question 8:
 
 Question 9:
 
--   Full Credit: Plot is provided with three lines (different colors for each line) for the cities, grade on x-axis, and mean NDVI on the y-axis. The axes have useful labels. Title and legend are present.
+-   Full Credit: Plot is provided with three lines or points (different colors for each line or point) for the cities, grade on x-axis, and mean NDVI on the y-axis. The axes have useful labels. Title and legend are present.
 
 -   Partial Credit: Minor errors in the plot Plot is provided but one of the required elements missing or incorrect (colors, axes, labels, title, labels)
 
@@ -76,7 +76,7 @@ Question 9:
 
 Question 10:
 
--   Full Credit: Correct calculation of relative difference using tidyverse code and table provided.  Answer uses a pivot_ function.
+-   Full Credit: Correct calculation of difference in NDVI using tidyverse code and table provided.  Answer uses a pivot_ function.
 
 -   Partial Credit: Error in calculation of relative difference, does not use tidyverse code, or table not provided
 
@@ -84,11 +84,11 @@ Question 10:
 
 Question 11:
 
--   Full Credit: Plot is provided with one line, environmental variable on x-axis, and relative difference in NDVI on y-axis. The axes have useful labels. Title and legend are present.
+-   Full Credit: Plot is provided with one line, environmental variable on x-axis, and difference in NDVI on y-axis. The axes have useful labels. Title and legend are present.
 
--   Partial Credit: Minor errors in the plot Plot is provided but one of the required elements missing or incorrect (axes, labels, title, labels)
+-   Partial Credit: Minor errors in the plot. Plot is provided but one of the required elements missing or incorrect (axes, labels, title, labels)
 
--   Partial Credit: Major errors in the plot. Plot is provided but multiple of the required elements missing or incorrect (colors, axes, labels, title, labels).
+-   Partial Credit: Major errors in the plot. Plot is provided but multiple of the required elements missing or incorrect (axes, labels, title, labels).
 
 -   No Credit: No plot provided.
 
@@ -108,7 +108,7 @@ Quarto
 
 GitHub
 
--   Full Credit: Assignment found on the course GitHub, multiple commits provided, and HTML committed
+-   Full Credit: Assignment found on the course GitHub, at least three commits provided, and HTML committed
 
 -   Partial Credit: Assignment found on course GitHub, but only a single commit was provided (no evidence that the student saved and committed progress) or missing HTML on GitHub.
 

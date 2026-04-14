@@ -1,4 +1,4 @@
-# Environmental Justice Module
+# Environmental Legacies Module
 
 ## Overview
 
@@ -6,7 +6,7 @@ What is the present-day impact of historic “red-lining” of US cities during 
 
 - author: Quinn Thomas (adapted from Carl Boettiger and Millie Chapman)
 - contact: <rqthomas@vt.edu>
-- date: 2025-03-20
+- date: 2026-04-09
 - license: MIT, CC-BY
 - copyright: Quinn Thomas
 
@@ -16,33 +16,40 @@ What is the present-day impact of historic “red-lining” of US cities during 
 
 ## Questions
 
- - How does vegetation productivity in cities vary by historical historic “red-lining” grades?
+ - How does vegetation productivity in cities vary by historical “red-lining” grades?
  - How does the influence of red-lining on productivity vary across cities with different environmental or demographic characteristics?
 
 ## Objectives
 
   - Describe concepts behind cloud-based geospatial file formats
   - Demonstrate the generation and processing of raster cubes
-  - Generating maps with raster and polygon data
+  - Generate maps with raster and polygon data
+  - Use tidyverse functions (joins, pivots) to combine and summarize spatial data
   - Demonstrate ability to use RStudio and GitHub workflows to demonstrate reproducible output.
   - Demonstrate ability to communicate clearly in code, written text, and visual formats.
   
 ## Requirements:
+
+**R packages:**
 
   - `tidyverse`
   - `rstac`
   - `gdalcubes`
   - `stars`
   - `tmap`
-  - `R`
+  - `sf`
+
+**Software:**
+
+  - R
   - RStudio
-  - Git & GitHub.
+  - Git & GitHub
 
 ## Instructions
 
-  - Read and complete the tutorial in `env-justice-tutorial.qmd`
-  - Work the assignment in `assignment/env-justice.qmd`
-  - `render` + commit output files to GitHub
+  - Read and complete the tutorial in `tutorial/env-legacies-tutorial.qmd`
+  - Work the assignment in `assignment/env-legacies.qmd`
+  - `render` + commit output files to GitHub (use at least three commits)
 
 ## Context
 
@@ -58,4 +65,4 @@ The background reading is embedded in the assignment Quarto document.
 
 ## Attribution
 
-This tutorial is an extension of the tutorial created by Carl Boettiger and Millie Chapman at the University of California - Berkeley. <https://boettiger-lab.github.io/nasa-topst-env-justice/tutorials/R/1-intro-R.htm> and <https://github.com/espm-157/spatial-template>
+This tutorial is an extension of the tutorial created by Carl Boettiger and Millie Chapman at the University of California - Berkeley. <https://boettiger-lab.github.io/nasa-topst-env-justice/tutorials/R/1-intro-R.html> and <https://github.com/espm-157/spatial-template>

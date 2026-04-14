@@ -1,32 +1,14 @@
 ---
-title: "Environmental Justice"
+title: "Environmental Legacies"
 format: 
   revealjs:
     embed-resources: true
 editor: visual
 ---
 
-## Environmental Legacy of redlining
+# Environmental legacy of redlining
 
-\
-\
 What is the present-day impact of historic "redlining" of US cities during the Great Depression on current day ecological processes?
-
-## Environmental Justice and Ecology
-
-![](img/paper.png){fig-alt="screenshot of Schell et al paper" fig-align="center"}
-
-::: aside
-<https://doi.org/10.1126/science.aay4497> <https://ourenvironment.berkeley.edu/users/1757114>
-:::
-
-## Environmental Justice and Ecology
-
-![](img/multi-level.png){fig-alt="Figure 1a from Schell et al." fig-align="center" width="495"}
-
-::: footnote
-<https://doi.org/10.1126/science.aay4497>
-:::
 
 ## Context: Redlining {.smaller}
 
@@ -36,11 +18,13 @@ What is the present-day impact of historic "redlining" of US cities during the G
 -   Red-lining: A discriminatory practice in which financial services were not provided to neighborhoods that had significant numbers of racial and ethnic minorities
 -   It was outlawed in 1968 following the passage of the civil rights bill.
 
-## Data: Mapping Relining
+## Data: Mapping Inequality
 
--   "Mapping Relining" is a project at the University of Richmond that provides maps of HOLC grades in cities across the U.S.
+-   "Mapping Inequality" is a project at the University of Richmond that provides maps of HOLC grades in cities across the U.S.
 
 -   Maps are available as polygons for use in geospatial analysis
+
+-   HOLC grade polygons can be combined with satellite-derived vegetation data to measure the ecological legacy of redlining
 
 ::: aside
 <https://dsl.richmond.edu/panorama/redlining>
@@ -58,6 +42,8 @@ What is the present-day impact of historic "redlining" of US cities during the G
 :::
 
 ## Data: Satellites
+
+We can measure canopy cover remotely using vegetation indices derived from satellite imagery.
 
 Vegetation indices from satellites
 
@@ -78,10 +64,10 @@ Sentinel 2
 :::::
 
 ::: aside
-https://en.wikipedia.org/wiki/Sentinel-2
+<https://en.wikipedia.org/wiki/Sentinel-2>
 :::
 
-## Data: Satellites
+## Data: Spectral Bands
 
 -   Satellites record reflected light in different regions of the light spectrum (wavelengths)
 
@@ -89,7 +75,7 @@ https://en.wikipedia.org/wiki/Sentinel-2
 
 -   Bands are chosen because they measure different aspects of the environment.
 
-## Data: Satellites
+## Data: Spectral Bands
 
 ![](img/S2-2022_Auto16.jpeg){fig-alt="diagram of spectral bands measured by Sentinel 2"}
 
@@ -137,10 +123,13 @@ Full remote sensing data sets are huge! (many bands, locations, times)
 ## Data: COGs and GeoTIFFs
 
 -   A Cloud Optimized GeoTIFF (COG) is a regular GeoTIFF file aimed at being hosted on an HTTP file server with an internal organization that enables more efficient workflows on the cloud.
--   Leverages the ability of clients to request just the parts of a file they need. (https://cogeo.org)
--   GeoTIFF is a public domain metadata standard that allows georeferencing information to be embedded within a TIFF file (https://en.wikipedia.org/wiki/GeoTIFF)
+-   Leverages the ability of clients to request just the parts of a file they need. (<https://cogeo.org>)
+-   GeoTIFF is a public domain metadata standard that allows georeferencing information to be embedded within a TIFF file (<https://en.wikipedia.org/wiki/GeoTIFF>)
+-   This means our workflow streams only the pixels, bands, and time window we need — without downloading terabytes of raw imagery
 
-## Environmental Justice and Ecology
+## Environmental Legacies
+
+Idea of combining maps of historical redlining with remote sensing of canopy cover was highlighted in Schell et al. 2020 *Science*
 
 ![](img/baltimore.png){fig-alt="NDVI for different grades from Figure 2 in Schell et al." fig-align="center" width="1000"}
 
@@ -148,20 +137,17 @@ Full remote sensing data sets are huge! (many bands, locations, times)
 <https://doi.org/10.1126/science.aay4497>
 :::
 
+## Data Science Skills
+
+-   Cloud access of remote sensing data
+-   Raster cubes
+-   Linking rasters with polygons
+-   Calculating spatial statistics within polygons
+
 ## Assignment
 
 -   Calculate, map, and analyze NDVI for different redlining grades within Richmond, VA
 -   Calculate and map NDVI for different redlining grades for three cities of your choice
 -   Evaluate how the relative influence of redlining varies across environmental or demographic gradients
 
-## Assignment
-
--   Review tutorial `tutorial/env-justice-tutorial.qmd`
--   Assignment is in `assignment/env-justice.qmd`
-
-## Data Science Skills
-
--   Cloud access of remote sensing data
--   Raster Cubes
--   Linking rasters with polygons
--   Calculating spatial statistics within polygons.
+**Getting started:** Review `tutorial/env-legacies-tutorial.qmd`, then work through `assignment/env-legacies.qmd`
