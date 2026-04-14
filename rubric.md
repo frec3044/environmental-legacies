@@ -78,7 +78,7 @@ Question 10:
 
 -   Full Credit: Correct calculation of difference in NDVI using tidyverse code and table provided.  Answer uses a pivot_ function.
 
--   Partial Credit: Error in calculation of relative difference, does not use tidyverse code, or table not provided
+-   Partial Credit: Error in calculation of difference, does not use tidyverse code, or table not provided
 
 -   No Credit: No calculations or a table provided
 
@@ -110,6 +110,6 @@ GitHub
 
 -   Full Credit: Assignment found on the course GitHub, at least three commits provided, and HTML committed
 
--   Partial Credit: Assignment found on course GitHub, but only a single commit was provided (no evidence that the student saved and committed progress) or missing HTML on GitHub.
+-   Partial Credit: Assignment found on course GitHub, but only two or fewer commits were provided (no evidence that the student saved and committed progress) or missing HTML on GitHub.
 
--   No Credit: Assignment not found on the course GitHub organization OR no commits on GitHub found.
+-   No Credit: Assignment not found on the course GitHub organization OR no commit from student on GitHub found.
